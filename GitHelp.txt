@@ -1,0 +1,43 @@
+Команды для регистрации данных
+1) git config --global user.name "AbdikaarovaSaikal"
+2) git config --global user.email "AbdikaarovaSaikal@gmail.com"
+
+Команды только для одного проекта
+3) git init | Инициализация гита
+4) git remote add origin link_to_repository | Добавление репозитория
+
+Для изменений
+5) git status | Статус репозитория
+6) git add . | Добавление файлов в буфер обмена
+   git add homeworks/homework_1 | Добавление конкретного файла в буфер обмена
+7) git commit -m "message" | Сохранение всего из буфер обмена
+8) git push origin master | Отправили сохранений на удаленный репозиторий
+
+9) git branch | Просмотреть все ветки
+10) git branch new_branch(название)  |  Создать новую ветку
+    git push origin (название)  |  Отправили новую ветку на удаленный репозиторий
+11) git checkout (название)     |  Переключиться на новую ветку
+    git switch (название)       |  Переключиться на новую ветку
+
+12) git restore | Вернуть файлы в исходное состояние
+13) git reset   | Вернуть исходное состояние после git add .
+14) git reset --mixed HEAD~1 | Удалить последний коммит и вернуть исходное состояние
+
+
+Правила префиксов:
+dev - для разработчиков, актуальный код
+stage/test - для тестировщиков, предрелизный код
+release - может не быть
+production - релиз и версия, для пользователей
+
+Относительно ветки dev создаются нижние:
+feat/ новая фича
+fix/ - исправление багов
+update/ - обновление программы
+hotfix/ - ошибка на production ветке
+delete/ - удаление
+
+git commit -m "fix: fixing bug on login page"
+git commit -m "feat: add new feature"
+git commit -m "update: update feature"
+git commit -m "hotfix: fix bug on login page"

@@ -73,11 +73,11 @@ class Money:
         else:
             return f'Валюты не равны: {self.currency} и {other.currency}'
 
-SOM = Money(100, 'SOM')
-SOM2 = Money(100, 'SOM')
-USD = Money(100, 'USD')
-print(SOM + USD)
-print(SOM + SOM2)
+# SOM = Money(100, 'SOM')
+# SOM2 = Money(100, 'SOM')
+# USD = Money(100, 'USD')
+# print(SOM + USD)
+# print(SOM + SOM2)
 
 class BankAccount:
     # Атрибута класса, хранятся в самом классе
@@ -98,9 +98,9 @@ class BankAccount:
     def get_balance():
         return 123
 
-argader = BankAccount("Ardager", 10000)
-print(BankAccount.get_bank_name()) # позволяет работать с самим классом
-print(argader.get_name())
+# argader = BankAccount("Ardager", 10000)
+# print(BankAccount.get_bank_name()) # позволяет работать с самим классом
+# print(argader.get_name())
 print(BankAccount.get_balance())
 
 class ServiceCalculate:
@@ -110,5 +110,5 @@ class ServiceCalculate:
     @staticmethod
     def calculate_deposit(amount, procent):
         return amount * procent
-print(ServiceCalculate.calculate_deposit(12, 2))
+# print(ServiceCalculate.calculate_deposit(12, 2))
 

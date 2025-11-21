@@ -62,5 +62,6 @@ def delete_user(id):
     cursor.execute('DELETE FROm users WHERE id = ?', (id,))
     connect.commit()
     print(f'Пользователь с id {id} удален')
+connect.close()
 # delete_user(2)
 

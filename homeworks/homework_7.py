@@ -58,3 +58,4 @@ def delete_book(id):
     connect.commit()
     print(f'Книга под номером {id} удалена!')
 # delete_book(5)
+connect.close()
